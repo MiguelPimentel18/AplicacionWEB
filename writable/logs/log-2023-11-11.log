@@ -1,0 +1,76 @@
+ERROR - 2023-11-11 16:49:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/app/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+#5 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Commands/Server/rewrite.php(47): require_once('...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/app/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+#3 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+#4 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#5 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#6 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#7 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Commands/Server/rewrite.php(47): require_once('...')
+#8 {main}
+CRITICAL - 2023-11-11 16:49:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php')
+ERROR - 2023-11-11 16:50:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/app/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+#5 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Commands/Server/rewrite.php(47): require_once('...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/app/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+#3 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+#4 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#5 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#6 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#7 /run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/system/Commands/Server/rewrite.php(47): require_once('...')
+#8 {main}
+CRITICAL - 2023-11-11 16:50:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/ConsultasController.php(11): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php')
+CRITICAL - 2023-11-11 17:43:02 --> Undefined variable $data2
+in APPPATH/Controllers/ConsultasController.php on line 17.
+ 1 APPPATH/Controllers/ConsultasController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ConsultasController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DEV/x/Fundamentos de Base de Datos/tienda/public/index.php')

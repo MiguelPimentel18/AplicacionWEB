@@ -1,0 +1,180 @@
+ERROR - 2023-12-09 21:19:19 --> mysqli_sql_exception: Table 'tienda.categorias' doesn't exist in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from c...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from c...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from c...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(21): CodeIgniter\Database\BaseConnection->query('select * from c...')
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->index()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#9 {main}
+CRITICAL - 2023-12-09 21:19:19 --> Table 'tienda.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\CategoriaController.php(21): CodeIgniter\Database\BaseConnection->query('select * from categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:25:07 --> mysqli_sql_exception: Table 'tienda.categorias' doesn't exist in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from c...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from c...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from c...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(21): CodeIgniter\Database\BaseConnection->query('select * from c...')
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->index()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#9 {main}
+CRITICAL - 2023-12-09 21:25:07 --> Table 'tienda.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\CategoriaController.php(21): CodeIgniter\Database\BaseConnection->query('select * from categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:27:09 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+#9 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#10 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2023-12-09 21:27:09 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categorias` (`nombre`, `descripcion`, `status`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:28:07 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+#9 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#10 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2023-12-09 21:28:07 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categorias` (`nombre`, `descripcion`, `status`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:28:11 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+#9 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#10 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2023-12-09 21:28:11 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categorias` (`nombre`, `descripcion`, `status`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:29:29 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+#9 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#10 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2023-12-09 21:29:29 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categorias` (`nombre`, `descripcion`, `status`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
+ERROR - 2023-12-09 21:52:18 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\USER\Downloads\fbd2023_2-main\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\USER\Downloads\fbd2023_2-main\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\USER\Downloads\fbd2023_2-main\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\USER\Downloads\fbd2023_2-main\app\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+#9 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#10 C:\Users\USER\Downloads\fbd2023_2-main\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Downloads\fbd2023_2-main\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Downloads\fbd2023_2-main\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2023-12-09 21:52:18 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categorias` (`nombre`, `descripcion`, `status`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CategoriaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CategoriaController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\USER\\Downloads\\fbd2023_2-main\\public\\index.php')
